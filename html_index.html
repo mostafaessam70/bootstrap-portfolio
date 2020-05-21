@@ -20,7 +20,8 @@
   
 </head>
 
-<body onscroll="fixnavbar()">
+<body >
+  <!-- onscroll="fixnavbar()" -->
 
 <!--start cover and navbar-->   
  
@@ -432,38 +433,56 @@
 <script>
     
          //button to scroll to top
-         setTimeout(function(){
-          var mybutton = document.getElementById("gotop");
-        mybutton.onclick = function () {
-            "use strict";
-            
-               window.scrollTo(0, 0);
-            };
-         },5000);
+        //  setTimeout(function(){
+        //   var mybutton = document.getElementById("gotop");
+        // mybutton.onclick = function () {
+        //        window.scrollTo(0, 0);
+        //     };
+        //  },3000);
     
-    
+      $(document).ready(function(){
+          $("#gotop").click(function(){
+            $("body,html").animate({
+              scrollTop:0
+            },2000);
+          });
+
+
+          $(window).scroll(function(){
+             if ($(this).scrollTop() > 50) 
+             {
+                 $('#mynavbar').addClass('navbar-fixed-top navbar-default');
+                 
+             } 
+             else {
+                 $('#mynavbar').removeClass('navbar-fixed-top navbar-default');
+               }
+            });
+
+        
+      });    
   
 
      // make the navbar fixed-top and default
-      function fixnavbar() 
-      {
-          "use strict";
-         var mynav = document.getElementById("mynavbar");  
-          if(document.body.scrollTop>100 || document.documentElement.scrollTop >100)
-              {
-                   mynav.classList.add("navbar-fixed-top");
-                   mynav.classList.add("navbar-default");
-              } else {
-                   mynav.classList.remove("navbar-fixed-top");
-                   mynav.classList.remove("navbar-default"); 
-              }
-      }
+      // function fixnavbar() 
+      // {
+      //     "use strict";
+      //    var mynav = document.getElementById("mynavbar");  
+      //     if(document.body.scrollTop>100 || document.documentElement.scrollTop >100)
+      //         {
+      //              mynav.classList.add("navbar-fixed-top");
+      //              mynav.classList.add("navbar-default");
+      //         } else {
+      //              mynav.classList.remove("navbar-fixed-top");
+      //              mynav.classList.remove("navbar-default"); 
+      //         }
+      // }
         
+
+
     
 </script>    
     
       
-    
-    
 </body>
 </html>
