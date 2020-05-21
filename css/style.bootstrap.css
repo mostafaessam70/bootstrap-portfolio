@@ -1,0 +1,330 @@
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+.container{
+    width: 950px;
+}
+/*start cover styles */
+
+
+.my-cover{
+background-image:url("../images/cover-site.jpg");
+background-position:center;
+background-repeat: no-repeat;  
+background-size: cover;
+min-height:400px;
+        
+}
+
+
+.my-cover nav  ul li a{
+    color:black;
+    font-family: monospace;
+    font-size:18px;
+}
+
+.my-cover nav ul li >:hover{
+    background-color:#DEDEDE;
+}
+    
+
+/*end cover styles */
+
+ /*start section about me*/
+.about-me{
+    margin-top:50px;
+    margin-bottom:50px;
+    color: #888;
+    padding:50 50pxpx;
+
+}    
+.about-me h1{
+    margin-bottom:35px;
+}  
+
+.about-me h4{
+    margin-bottom:15px;
+    font-style:italic;
+}  
+
+.about-me p{
+    text-align: justify;
+    margin:30px;
+    line-height: 2em;
+   
+}
+
+.about-me .my-name .left img{
+    opacity: .7;
+}
+
+.about-me .my-name .left img :hover{
+    opacity:1.0;
+}
+ /*End section about me*/ 
+
+
+ /*start section my name*/ 
+.my-name{
+    margin-top:35px;
+    margin-left: 70px;
+}
+.my-name .col-lg-6{
+    width: 48%;
+}
+
+.my-name .left h3{
+    margin-bottom: 35px;
+}
+
+.my-name .right p{
+    overflow: hidden;
+    line-height: 2em;
+    margin-left: 10px;
+   
+}
+ /*End section my name*/ 
+
+
+
+ /*start section skils*/
+
+.skills{
+    margin-top: 60px;
+    color: #888;
+    
+}
+
+.skills .program-skills .progress{
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 0px;
+}
+
+.skills .program-skills .progress .progress-bar{
+    background-color: #616161;
+    text-align:center;
+    padding: 8px;
+}
+ /*End section skils*/ 
+
+/*start section survay*/
+.survay{
+   background-color: #616161;
+   color: white;
+   margin-top: 40px;
+ 
+   padding-top: 30px;  
+   padding-bottom: 30px;
+   font-family:sans-serif;
+    
+}
+
+/*End section survay*/ 
+
+
+/*start section portfolio*/
+
+.portfolio .carousel-inner .item img{
+    width: 100%;
+    height: 400px;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 80px;
+  left: 15%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:antiquewhite;
+  text-align: center;
+  font-family:monospace;
+  background-color:rgba(150,150,150,.5);    
+}
+
+.carousel-indicators>li{
+    height: 15px;
+    width: 15px;
+    border-radius: 10px; 
+    
+}
+
+.carousel-indicators>.active{
+    height: 19px;
+    width: 19px;
+    border-radius: 10px; 
+    background-color:cadetblue; 
+}
+
+/*End section portfolio*/ 
+
+
+/*start section my work */
+
+.my-work {
+    margin-top: 50px;
+    
+}
+
+
+.my-work .title{
+    margin-bottom: 45px;
+    color: #888;
+    
+}
+
+.my-work .title h2{
+    margin-bottom: 30px;
+    
+}
+
+.my-work .second{
+    margin-top: 15px;
+}
+
+.my-work button{
+    margin-top: 65px;
+    border-radius: 0px;
+    background-color: #F2F2F2;
+}
+
+.my-work button:hover{
+    background-color: #BFBFBF;
+}
+
+.my-work .container .img-responsive{
+    height: 200px;
+}
+
+.my-work img{
+    padding:5px;
+     box-shadow: 5px 5px 5px 5px silver;
+       -webkit-transition:transform 1.5s;
+          -moz-transition:transform 1.5s;
+            -o-transition:transform 1.5s;
+               transition:transform 1.5s;
+}
+.my-work img:hover{
+       -webkit-transform:scale(1.3,1.3);
+          -moz-transform:scale(1.3,1.3);
+            -o-transform:scale(1.3,1.3);
+               transform:scale(1.3,1.3);
+}
+
+.col-lg-3{
+    padding-left: 4px;
+}
+/*End section my work */
+
+
+/*start section feedback */ 
+ 
+.feedback{
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.feedback .text{
+    color: #777;
+    
+}
+
+.feedback .text p{
+    font-style: italic;
+    margin-bottom: 50px;
+    
+}
+ 
+.feedback .row .location p{
+    color: #777;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.feedback .row .send-message p{
+     color: #777;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.feedback .row .send-message .form-inline .input-group .form-control{
+    width: 260px;
+    height: 50px; 
+    border-radius: 0px;
+}
+
+.feedback .row .send-message .message .input-group .form-control {
+    width: 565px;
+    height: 50px;
+   /* margin-top: 15px;*/
+    border-radius: 0px;
+    
+}
+
+.feedback .row .send-message .message button{
+    text-align:center;
+    float: right;
+    padding: 12px;
+    margin-top: 10px;
+    color:#fff;
+    font-size: 15px;
+    background-color:black;
+    border-color: #ccc;
+    border: 1px solid yellow;
+    border-radius: 0px;
+    
+}
+
+.feedback .row .send-message .message button:hover{
+    color: #000;
+    background-color: #ccc;
+}
+/*End section feedback */  
+
+
+/*start section footer */ 
+
+footer{
+    height: 300px;
+    background-color: #777;
+}
+
+footer:hover{
+    background-color: black;
+}
+
+footer .oner button{
+    border-radius: 0px;
+    margin-top: 60px;
+    color:#777;
+    transition: all .5s
+}
+
+footer .oner .logo{
+    padding-top: 50px;
+}
+
+footer .oner p{
+    margin-top: 30px;
+    font-size: 15px;
+    color: white;
+}
+/*End section footer */ 
+
+
+
+
+
+
+
+
+
+
+
